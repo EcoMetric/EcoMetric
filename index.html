@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecodash - Sustainability Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to Ecodash</h1>
+            <p>Your sustainability dashboard to help track and improve your business’s environmental impact.</p>
+        </div>
+    </header>
+
+    <!-- Main Form Section -->
+    <section class="form-container">
+        <div class="container">
+            <form id="business-form">
+                <h2>Track Your Business Sustainability</h2>
+                <p>Please fill in the details below to calculate your sustainability score and get recommendations.</p>
+
+                <!-- Business Name Input -->
+                <div class="form-group">
+                    <label for="business-name">Business Name:</label>
+                    <input type="text" id="business-name" name="business-name" required placeholder="Enter your business name">
+                </div>
+
+                <!-- Business Type Select -->
+                <div class="form-group">
+                    <label for="business-type">Business Type:</label>
+                    <select id="business-type" name="business-type" required>
+                        <option value="">Select Business Type</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="retail">Retail Store</option>
+                        <option value="service">Service-Based (e.g., Landscaping)</option>
+                    </select>
+                </div>
+
+                <!-- Energy Consumption Input -->
+                <div class="form-group">
+                    <label for="energy-consumption">Energy Consumption (kWh):</label>
+                    <input type="number" id="energy-consumption" name="energy-consumption" required placeholder="Enter energy consumption in kWh" min="0">
+                </div>
+
+                <!-- Water Consumption Input -->
+                <div class="form-group">
+                    <label for="water-consumption">Water Consumption (L):</label>
+                    <input type="number" id="water-consumption" name="water-consumption" required placeholder="Enter water consumption in Liters" min="0">
+                </div>
+
+                <!-- Waste Production Input -->
+                <div class="form-group">
+                    <label for="waste-production">Waste Production (kg):</label>
+                    <input type="number" id="waste-production" name="waste-production" required placeholder="Enter waste production in kg" min="0">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn">Submit Data</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="result-container" class="container" style="display: none;">
+        <h2>Your Sustainability Results</h2>
+        <div id="sustainability-score"></div>
+        <div id="recommendations"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ecodash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

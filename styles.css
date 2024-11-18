@@ -1,0 +1,214 @@
+/* General Body and Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for the page */
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Container class for setting width and centering content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #1B5E20; /* Darker green background */
+    color: white;
+    padding: 60px 0; /* Extra padding for a prominent header */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #fff; /* Separate header from content */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 15px; /* Round corners for modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Max width to keep form readable */
+    margin: 30px auto;
+    transition: box-shadow 0.3s ease-in-out; /* Animation for hover */
+}
+
+/* Form container hover effect */
+.form-container:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Form Title */
+h2 {
+    color: #1B5E20;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Form section styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Grouping each form input with its label */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+label {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Input and Select box Styling */
+input, select {
+    padding: 14px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transition for input focus */
+}
+
+/* Focused input box style */
+input:focus, select:focus {
+    border-color: #1B5E20; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(27, 94, 32, 0.6); /* Glowing effect */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #1B5E20; /* Green background */
+    border: none;
+    border-radius: 30px; /* Fully rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #388E3C; /* Slightly darker green */
+    transform: scale(1.05); /* Button enlarges on hover */
+}
+
+/* Results Section */
+#result-container {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+}
+
+#sustainability-score {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1B5E20;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#recommendations {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller font for mobile devices */
+    }
+
+    .container {
+        width: 95%; /* Make the container take up more width on small screens */
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Smaller form title on mobile */
+    }
+
+    input, select, button {
+        font-size: 15px; /* Slightly smaller input text */
+    }
+
+    button {
+        padding: 12px 25px; /* Smaller button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Form Field Validation (Optional) */
+input:invalid, select:invalid {
+    border-color: #f44336; /* Red border for invalid fields */
+}
+
+input:valid, select:valid {
+    border-color: #4CAF50; /* Green border for valid fields */
+}
