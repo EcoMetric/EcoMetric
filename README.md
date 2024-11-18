@@ -1,12 +1,9 @@
-- 👋 Hi, I’m @EcoMetric
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-EcoMetric/EcoMetric is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+ecodash/
+│
+├── index.html       # Frontend HTML
+├── styles.css       # CSS for styling
+├── script.js        # JS for interactivity
+├── app.py           # Backend Flask app
+├── requirements.txt # Python dependencies
+├── Procfile         # Heroku deployment file
+└── README.md        # GitHub readme (optional)
